@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>极简OCR工具，无需安装，支持离线图片文字提取，打开网页就能用</title>
+      <link href="/posts/35848.html"/>
+      <url>/posts/35848.html</url>
+      
+        <content type="html"><![CDATA[<p>如今，我们常常需要从图片中提取文字，但很多OCR工具操作复杂，需要安装才能使用。今天，我们要介绍的是一个极简的OCR工具，它无需安装，支持离线图片文字提取，打开网页就能用。</p><p>WeOCR是一个在线文字识别OCR工具，它基于同样开源的OCR引擎Tesseract，支持PWA得以实现在浏览器中离线使用。这意味着，你无需网络访问，本地处理，专注隐私保护。同时，它支持中文，英语等多种语言，满足你的多种需求。</p><p><img src="https://img.xinqubang.com/202401131426643.webp" alt="https://img.xinqubang.com/202401131426643.webp"></p><p>使用非常简单，你只需将图片打开，或者直接ctrl+v粘贴，即可自动识别图片文字。无论你是需要提取书籍、杂志、报纸中的文字，还是需要将图片中的文字转换为可编辑的文本，它都能轻松帮你实现。</p><p><img src="https://img.xinqubang.com/202401131426622.webp" alt="https://img.xinqubang.com/202401131426622.webp"></p><p>💡 如果您还有其他想了解的软件，欢迎您在底部评论区留言，一起交流~。希望我今天的分享能对您有所帮助，谢谢！</p><blockquote><p>下载地址</p></blockquote><a class="btn-anzhiyu outline larger" href="https://ocr.kxziti.cn/"   title="官网"><i class="fa-solid fa-circle-down"></i><span>官网</span></a>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 文字识别 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Upscayl|模糊图片瞬间变清晰！免费的AI图片无损放大工具，支持离线使用</title>
       <link href="/posts/36538.html"/>
       <url>/posts/36538.html</url>
