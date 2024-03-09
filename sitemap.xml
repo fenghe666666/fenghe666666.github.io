@@ -379,20 +379,6 @@
   </url>
   
   <url>
-    <loc>https://www.xinqubang.com/tags/%E6%97%A0%E6%8D%9F%E6%94%BE%E5%A4%A7/</loc>
-    <lastmod>2024-03-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xinqubang.com/tags/%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/</loc>
-    <lastmod>2024-03-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.xinqubang.com/tags/%E9%9F%B3%E4%B9%90%E4%B8%8B%E8%BD%BD/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -414,13 +400,6 @@
   </url>
   
   <url>
-    <loc>https://www.xinqubang.com/tags/%E8%AE%B0%E5%8D%95%E8%AF%8D/</loc>
-    <lastmod>2024-03-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.xinqubang.com/tags/%E5%8D%B8%E8%BD%BD/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -428,7 +407,28 @@
   </url>
   
   <url>
+    <loc>https://www.xinqubang.com/tags/%E6%97%A0%E6%8D%9F%E6%94%BE%E5%A4%A7/</loc>
+    <lastmod>2024-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xinqubang.com/tags/%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/</loc>
+    <lastmod>2024-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.xinqubang.com/tags/%E7%9F%AD%E5%89%A7/</loc>
+    <lastmod>2024-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xinqubang.com/tags/%E8%AE%B0%E5%8D%95%E8%AF%8D/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -449,7 +449,7 @@
   </url>
   
   <url>
-    <loc>https://www.xinqubang.com/tags/%E4%B9%A0%E9%A2%98%E7%94%9F%E6%88%90%E5%99%A8/</loc>
+    <loc>https://www.xinqubang.com/tags/%E4%B9%A0%E9%A2%98%E7%94%9F%E6%88%90/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -457,6 +457,20 @@
   
   <url>
     <loc>https://www.xinqubang.com/tags/%E6%96%87%E4%BB%B6%E6%89%AB%E6%8F%8F/</loc>
+    <lastmod>2024-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xinqubang.com/tags/%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD/</loc>
+    <lastmod>2024-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xinqubang.com/tags/%E5%B7%A5%E5%85%B7%E7%AE%B1/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -471,13 +485,6 @@
   
   <url>
     <loc>https://www.xinqubang.com/tags/ai%E7%BB%98%E7%94%BB/</loc>
-    <lastmod>2024-03-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xinqubang.com/tags/%E5%B7%A5%E5%85%B7%E7%AE%B1/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -499,13 +506,6 @@
   
   <url>
     <loc>https://www.xinqubang.com/tags/%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD/</loc>
-    <lastmod>2024-03-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xinqubang.com/tags/%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
