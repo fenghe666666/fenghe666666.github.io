@@ -1,365 +1,414 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>新趣帮 - 发现有趣新应用！</title><meta name="keywords" content="新趣帮,新趣帮博客,兴趣帮,优质软件,优质网站"><meta name="author" content="新趣帮"><meta name="copyright" content="新趣帮"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="新趣帮"><meta name="application-name" content="新趣帮"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="website"><meta property="og:title" content="新趣帮"><meta property="og:url" content="https://www.xinqubang.com/page/2/index.html"><meta property="og:site_name" content="新趣帮"><meta property="og:description" content="发现有趣新应用！"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="https://img.xinqubang.com/202401071523922.png"><meta property="article:author" content="新趣帮"><meta property="article:tag" content="新趣帮,新趣帮博客,兴趣帮,优质软件,优质网站"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://img.xinqubang.com/202401071523922.png"><meta name="description" content="发现有趣新应用！"><link rel="shortcut icon" href="https://img.xinqubang.com/202401071516818.ico"><link rel="canonical" href="https://www.xinqubang.com/page/2/"><link rel="preconnect" href="//cdn.cbd.int"/><meta name="google-site-verification" content="rmLYcPvTZHdiaMmMvI_0dqgaqUXbnU5gtsD14wEGPDY"/><meta name="baidu-site-verification" content="codeva-w22oudQjAm"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
-  linkPageTop: {"enable":true,"title":"与数百名博主无限进步","addFriendPlaceholder":"昵称（请勿包含博客等字样）：\n网站地址（要求博客地址，请勿提交个人主页）：\n头像图片url（请提供尽可能清晰的图片，我会上传到我自己的图床）：\n描述：\n站点截图（可选）：\n"},
-  peoplecanvas: undefined,
-  postHeadAiDescription: {"enable":true,"gptName":"AnZhiYu","mode":"local","switchBtn":false,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":"xxxx","Referer":"https://xx.xx/"},
-  diytitle: {"enable":true,"leaveTitle":"再看看嘛！","backTitle":"欢迎肥来！"},
-  LA51: {"enable":true,"ck":"3HA0vYYr8md7SZz6","LingQueMonitorID":"3HA0vYYr8md7SZz6"},
-  greetingBox: {"enable":true,"default":"晚上好👋","list":[{"greeting":"晚安😴","startTime":0,"endTime":5},{"greeting":"早上好鸭👋, 祝你一天好心情！","startTime":6,"endTime":9},{"greeting":"上午好👋, 状态很好，鼓励一下～","startTime":10,"endTime":10},{"greeting":"11点多啦, 在坚持一下就吃饭啦～","startTime":11,"endTime":11},{"greeting":"午安👋, 宝贝","startTime":12,"endTime":14},{"greeting":"🌈充实的一天辛苦啦！","startTime":14,"endTime":18},{"greeting":"19点喽, 奖励一顿丰盛的大餐吧🍔。","startTime":19,"endTime":19},{"greeting":"晚上好👋, 在属于自己的时间好好放松😌~","startTime":20,"endTime":24}]},
-  twikooEnvId: 'https://pl.xinqubang.com/',
-  commentBarrageConfig:undefined,
-  music_page_default: "nav_music",
-  root: '/',
-  preloader: undefined,
-  friends_vue_info: undefined,
-  navMusic: true,
-  mainTone: undefined,
-  authorStatus: {"skills":["🤖️ 数码科技爱好者","🔍 分享与热心帮助","🏃 脚踏实地行动派","💢 壮汉人狠话不多"]},
-  algolia: undefined,
-  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
-  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
-  noticeOutdate: undefined,
-  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
-  copy: {
-    success: '复制成功',
-    error: '复制错误',
-    noSupport: '浏览器不支持'
-  },
-  relativeDate: {
-    homepage: false,
-    simplehomepage: true,
-    post: false
-  },
-  runtime: '天',
-  date_suffix: {
-    just: '刚刚',
-    min: '分钟前',
-    hour: '小时前',
-    day: '天前',
-    month: '个月前'
-  },
-  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"作者: 新趣帮","link":"链接: ","source":"来源: 新趣帮","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。","copySuccess":"复制成功，复制和转载请标注本文地址"}},
-  lightbox: 'fancybox',
-  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
-  source: {
-    justifiedGallery: {
-      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
-      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
-    }
-  },
-  isPhotoFigcaption: false,
-  islazyload: true,
-  isAnchor: false,
-  shortcutKey: undefined,
-  autoDarkmode: true
-}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  configTitle: '新趣帮',
-  title: '新趣帮',
-  postAI: '',
-  pageFillDescription: '发现有趣新应用',
-  isPost: false,
-  isHome: true,
-  isHighlightShrink: false,
-  isToc: false,
-  postUpdate: '2024-03-23 18:16:52',
-  postMainColor: '',
-}</script><noscript><style type="text/css">
-  #nav {
-    opacity: 1
-  }
-  .justified-gallery img {
-    opacity: 1
-  }
+<!DOCTYPE html>
+<html lang=zh-CN>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:description" content="发现有趣新应用！">
+    <meta property="og:type" content="website">
+    <meta name="description" content="发现有趣新应用！">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
 
-  #recent-posts time,
-  #post-meta time {
-    display: inline !important
-  }
-</style></noscript><script>(win=>{
-      win.saveToLocal = {
-        set: (key, value, ttl) => {
-          if (ttl === 0) return
-          const now = Date.now()
-          const expiry = now + ttl * 86400000
-          const item = {
-            value,
-            expiry
-          }
-          localStorage.setItem(key, JSON.stringify(item))
-        },
-      
-        get: key => {
-          const itemStr = localStorage.getItem(key)
-      
-          if (!itemStr) {
-            return undefined
-          }
-          const item = JSON.parse(itemStr)
-          const now = Date.now()
-      
-          if (now > item.expiry) {
-            localStorage.removeItem(key)
-            return undefined
-          }
-          return item.value
-        }
-      }
-    
-      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
-        const script = document.createElement('script')
-        script.src = url
-        script.async = true
-        script.onerror = reject
-        script.onload = script.onreadystatechange = function() {
-          const loadState = this.readyState
-          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-          script.onload = script.onreadystatechange = null
-          resolve()
-        }
-
-        Object.keys(attr).forEach(key => {
-          script.setAttribute(key, attr[key])
-        })
-
-        document.head.appendChild(script)
-      })
-    
-      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
-        const link = document.createElement('link')
-        link.rel = 'stylesheet'
-        link.href = url
-        if (id) link.id = id
-        link.onerror = reject
-        link.onload = link.onreadystatechange = function() {
-          const loadState = this.readyState
-          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-          link.onload = link.onreadystatechange = null
-          resolve()
-        }
-        document.head.appendChild(link)
-      })
-    
-      win.activateDarkMode = () => {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
-        }
-      }
-      win.activateLightMode = () => {
-        document.documentElement.setAttribute('data-theme', 'light')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
-        }
-      }
-      const t = saveToLocal.get('theme')
-    
-          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
-          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
-          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
-
-          if (t === undefined) {
-            if (isLightMode) activateLightMode()
-            else if (isDarkMode) activateDarkMode()
-            else if (isNotSpecified || hasNoSupport) {
-              const now = new Date()
-              const hour = now.getHours()
-              const isNight = hour <= 6 || hour >= 18
-              isNight ? activateDarkMode() : activateLightMode()
-            }
-            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
-              if (saveToLocal.get('theme') === undefined) {
-                e.matches ? activateDarkMode() : activateLightMode()
-              }
-            })
-          } else if (t === 'light') activateLightMode()
-          else activateDarkMode()
+    <title>
         
-      const detectApple = () => {
-        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
-          document.documentElement.classList.add('apple')
-        }
-      }
-      detectApple()
-    })(window)</script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.0.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.xinqubang.com/" title="NotionNext"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/favicon.png" alt="NotionNext"/><span class="back-menu-item-text">NotionNext</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://www.kxziti.cn/" title="快下字体"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="快下字体"/><span class="back-menu-item-text">快下字体</span></a></div></div></div></div><a id="site-name" href="/" accesskey="h"><div class="title">新趣帮</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 分类</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/categories/%E7%94%B5%E8%84%91/"><i class="fa-brands fa-windows faa-tada"></i><span> 电脑</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/%E5%AE%89%E5%8D%93/"><i class="fa-brands fa-android faa-tada"></i><span> 安卓</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/%E5%AE%89%E5%8D%93/"><i class="fa-brands fa-apple faa-tada"></i><span> IOS</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/%E7%BD%91%E7%AB%99/"><i class="fa-solid fa-table faa-tada"></i><span> 网站</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/%E6%89%A9%E5%B1%95%E6%8F%92%E4%BB%B6/"><i class="fa-brands fa-chrome faa-tada"></i><span> 扩展插件</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/equipment/"><span> 神器集</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/comments/"><span> 留言板</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/music/"><span> 音乐馆</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 其它</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="fas fa-link faa-tada"></i><span> 友链</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/aboutus/"><i class="fas fa-info faa-tada"></i><span> 关于</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索🔍" accesskey="s"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span> 搜索</span></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://img.xinqubang.com/4b3499307fb98b4bc29d1d2ac3b9e17.jpg" target="_blank"><img class="post-qr-code-img" alt="微信" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xinqubang.com/4b3499307fb98b4bc29d1d2ac3b9e17.jpg"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://img.xinqubang.com/4b3499307fb98b4bc29d1d2ac3b9e17.jpg" target="_blank"><img class="post-qr-code-img" alt="支付宝" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xinqubang.com/4b3499307fb98b4bc29d1d2ac3b9e17.jpg"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/PDF%E5%B7%A5%E5%85%B7/" style="font-size: 1.05rem;">PDF工具<sup>1</sup></a><a href="/tags/ai%E7%BB%98%E7%94%BB/" style="font-size: 1.05rem;">ai绘画<sup>2</sup></a><a href="/tags/ocr%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB/" style="font-size: 1.05rem;">ocr文字识别<sup>1</sup></a><a href="/tags/%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/" style="font-size: 1.05rem;">下载工具<sup>3</sup></a><a href="/tags/%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD/" style="font-size: 1.05rem;">不限速下载<sup>1</sup></a><a href="/tags/%E4%B9%A0%E9%A2%98%E7%94%9F%E6%88%90/" style="font-size: 1.05rem;">习题生成<sup>1</sup></a><a href="/tags/%E5%8A%9E%E5%85%AC%E6%96%87%E6%A1%A3/" style="font-size: 1.05rem;">办公文档<sup>2</sup></a><a href="/tags/%E5%8D%B8%E8%BD%BD/" style="font-size: 1.05rem;">卸载<sup>1</sup></a><a href="/tags/%E5%9B%BE%E7%89%87%E4%B8%8B%E8%BD%BD/" style="font-size: 1.05rem;">图片下载<sup>1</sup></a><a href="/tags/%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/" style="font-size: 1.05rem;">图片处理<sup>2</sup></a><a href="/tags/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/" style="font-size: 1.05rem;">在线工具<sup>2</sup></a><a href="/tags/%E5%B0%8F%E5%B7%A5%E5%85%B7/" style="font-size: 1.05rem;">小工具<sup>3</sup></a><a href="/tags/%E5%B7%A5%E5%85%B7%E7%AE%B1/" style="font-size: 1.05rem;">工具箱<sup>1</sup></a><a href="/tags/%E6%88%AA%E5%9B%BE/" style="font-size: 1.05rem;">截图<sup>1</sup></a><a href="/tags/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/" style="font-size: 1.05rem;">文件传输<sup>1</sup></a><a href="/tags/%E6%96%87%E4%BB%B6%E6%89%AB%E6%8F%8F/" style="font-size: 1.05rem;">文件扫描<sup>1</sup></a><a href="/tags/%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB/" style="font-size: 1.05rem;">文字识别<sup>2</sup></a><a href="/tags/%E6%97%A0%E6%8D%9F%E6%94%BE%E5%A4%A7/" style="font-size: 1.05rem;">无损放大<sup>1</sup></a><a href="/tags/%E7%9F%AD%E5%89%A7/" style="font-size: 1.05rem;">短剧<sup>2</sup></a><a href="/tags/%E7%9F%AD%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90/" style="font-size: 1.05rem;">短视频解析<sup>2</sup></a><a href="/tags/%E7%A3%81%E5%8A%9B%E4%B8%8B%E8%BD%BD/" style="font-size: 1.05rem;">磁力下载<sup>1</sup></a><a href="/tags/%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0/" style="font-size: 1.05rem;">系统更新<sup>1</sup></a><a href="/tags/%E7%B3%BB%E7%BB%9F%E6%BF%80%E6%B4%BB/" style="font-size: 1.05rem;">系统激活<sup>1</sup></a><a href="/tags/%E7%BD%91%E7%9B%98%E4%B8%8B%E8%BD%BD/" style="font-size: 1.05rem;">网盘下载<sup>1</sup></a><a href="/tags/%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD/" style="font-size: 1.05rem;">视频下载<sup>1</sup></a><a href="/tags/%E8%AE%B0%E5%8D%95%E8%AF%8D/" style="font-size: 1.05rem;">记单词<sup>1</sup></a><a href="/tags/%E8%BF%BD%E5%89%A7/" style="font-size: 1.05rem;">追剧<sup>2</sup></a><a href="/tags/%E9%9F%B3%E4%B9%90%E4%B8%8B%E8%BD%BD/" style="font-size: 1.05rem;">音乐下载<sup>3</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/03/"><span class="card-archive-list-date">三月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/01/"><span class="card-archive-list-date">一月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">27</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav></header><main id="blog-container"><div class="layout hide-aside" id="content-inner"><div class="recent-posts" id="recent-posts"><div id="categoryBar"><div class="category-bar" id="category-bar"><div id="catalog-bar"><div id="catalog-list"><div class="catalog-list-item" id="首页"><a href="/">首页</a></div>
-    <div class="catalog-list-item" id="/categories/扩展插件/">
-      <a href="/categories/扩展插件/">
-        扩展插件
-      </a>
+        
+        
+    </title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/aircloud.css">
+
+    
+<link rel="stylesheet" href="/css/gitment.css">
+
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_28hi1hpxx24.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+
+    
+
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> 发现有趣新应用！ </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="/" />
+        </div>
+        <div class="name">
+            <i>新趣帮</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li  class=active >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li >
+                <a href="/collect/">
+                    <i class="iconfont icon-shoucang1"></i>
+                    <span>收藏</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
     </div>
     
-    <div class="catalog-list-item" id="/categories/电脑/">
-      <a href="/categories/电脑/">
-        电脑
-      </a>
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-bg" id="search-bg"></div>
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> 发现有趣新应用！ </i>
+        </div>
     </div>
     
-    <div class="catalog-list-item" id="/categories/网站/">
-      <a href="/categories/网站/">
-        网站
-      </a>
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+<div class="post-preview-container" style="min-height: 720px">
+    
+    <div class="post-preview">
+        <div class="post-time">2024-01-08</div>
+        <div class="post-info">
+            <a href="https://www.xinqubang.com/posts/41149.html">
+                <h3>
+                    一款88项功能聚合的神器，完全免费，支持音乐下载与影视观看
+                </h3>
+            </a>
+            <p>
+                
+                <span>/</span>
+                
+                <a class="tag" href="/tags/#小工具" title="小工具">小工具</a>
+                <span>/</span>
+                
+                <a class="tag" href="/tags/#音乐下载" title="音乐下载">音乐下载</a>
+                <span>/</span>
+                
+                <a class="tag" href="/tags/#短视频解析" title="短视频解析">短视频解析</a>
+                <span>/</span>
+                
+                <a class="tag" href="/tags/#追剧" title="追剧">追剧</a>
+                <span>/</span>
+                
+                
+            </p>
+        </div>
     </div>
     
-    <div class="catalog-list-item" id="/categories/安卓/">
-      <a href="/categories/安卓/">
-        安卓
-      </a>
+    <div class="post-preview">
+        <div class="post-time">2024-01-08</div>
+        <div class="post-info">
+            <a href="https://www.xinqubang.com/posts/22120.html">
+                <h3>
+                    热播短剧免费看，随时随地享受追剧的快乐
+                </h3>
+            </a>
+            <p>
+                
+                <span>/</span>
+                
+                <a class="tag" href="/tags/#短剧" title="短剧">短剧</a>
+                <span>/</span>
+                
+                
+            </p>
+        </div>
     </div>
     
-    <div class="catalog-list-item" id="/categories/安卓/IOS/">
-      <a href="/categories/安卓/IOS/">
-        IOS
-      </a>
+    <div class="post-preview">
+        <div class="post-time">2024-01-08</div>
+        <div class="post-info">
+            <a href="https://www.xinqubang.com/posts/28937.html">
+                <h3>
+                    快速使用全球主流AI绘画应用，不用购买设备或本地部署！
+                </h3>
+            </a>
+            <p>
+                
+                <span>/</span>
+                
+                <a class="tag" href="/tags/#ai绘画" title="ai绘画">ai绘画</a>
+                <span>/</span>
+                
+                
+            </p>
+        </div>
     </div>
     
-    <div class="catalog-list-item" id="/categories/安卓/IOS/网站/">
-      <a href="/categories/安卓/IOS/网站/">
-        网站
-      </a>
+    <div class="post-preview">
+        <div class="post-time">2024-01-08</div>
+        <div class="post-info">
+            <a href="https://www.xinqubang.com/posts/33135.html">
+                <h3>
+                    这个网站竟然可以在浏览器中免费实现批量文件重命名！
+                </h3>
+            </a>
+            <p>
+                
+                <span>/</span>
+                
+                <a class="tag" href="/tags/#在线工具" title="在线工具">在线工具</a>
+                <span>/</span>
+                
+                
+            </p>
+        </div>
     </div>
-    </div><div class="category-bar-next" id="category-bar-next" onclick="anzhiyu.scrollCategoryBarToRight()"><i class="anzhiyufont anzhiyu-icon-angle-double-right"></i></div><a class="catalog-more" href="/categories/">更多</a></div></div></div><div class="recent-post-item lastestpost-item" onclick="pjax.loadUrl('/posts/41149.html')"><div class="post_cover left"><a href="/posts/41149.html" title="一款88项功能聚合的神器，完全免费，支持音乐下载与影视观看" style="display: flex;height: 100%;"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xinqubang.com/202401041717298.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一款88项功能聚合的神器，完全免费，支持音乐下载与影视观看" style="pointer-events: none"></a></div><div class="recent-post-info"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><div class="article-categories-original">安卓</div><a class="unvisited-post" href="/posts/41149.html" title="一款88项功能聚合的神器，完全免费，支持音乐下载与影视观看">未读</a></div><a class="article-title" href="/posts/41149.html" title="一款88项功能聚合的神器，完全免费，支持音乐下载与影视观看">一款88项功能聚合的神器，完全免费，支持音乐下载与影视观看</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2024-01-08T10:23:29.000Z" title="发表于 2024-01-08 18:23:29" time="2024-01-08 18:23:29">2024-01-08</time><time class="time_hidden" datetime="2024-01-08T10:49:55.040Z" title="更新于 2024-01-08 18:49:55" time="2024-01-08 18:49:55">2024-01-08</time></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E5%B0%8F%E5%B7%A5%E5%85%B7/" event.cancelbubble onclick="window.event.cancelBubble=true;"><span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>小工具</span></a><a class="article-meta__tags" href="/tags/%E9%9F%B3%E4%B9%90%E4%B8%8B%E8%BD%BD/" event.cancelbubble onclick="window.event.cancelBubble=true;"><span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>音乐下载</span></a><a class="article-meta__tags" href="/tags/%E7%9F%AD%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90/" event.cancelbubble onclick="window.event.cancelBubble=true;"><span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>短视频解析</span></a><a class="article-meta__tags" href="/tags/%E8%BF%BD%E5%89%A7/" event.cancelbubble onclick="window.event.cancelBubble=true;"><span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>追剧</span></a></span></div><div class="content">对于很多人来讲，一款小巧且功能强大的应用程序就像是一个不可或缺的好伙伴。考虑到这类工具的需求量一直都是居高不下，今天再给大家分享一款功能足够带劲，只要你需要，它都能办到的聚合类App——简助手。
-这是一款全能型工具箱软件，比其他的同类有所不同的是，这一款可以说你需要的功能它全都支持，无论是短视频提取，还是免费下载全网音乐，还是用来追剧，它都可以，一共支持88个功能，非常强大！这里简单给大家展示一下它所支持的功能，后面挑重点给大家介绍。
+    
+    <div class="post-preview">
+        <div class="post-time">2024-01-08</div>
+        <div class="post-info">
+            <a href="https://www.xinqubang.com/posts/48522.html">
+                <h3>
+                    幻影下载|全新磁力神器，完全免费！下载不限速，吊打迅雷！
+                </h3>
+            </a>
+            <p>
+                
+                <span>/</span>
+                
+                <a class="tag" href="/tags/#下载工具" title="下载工具">下载工具</a>
+                <span>/</span>
+                
+                
+            </p>
+        </div>
+    </div>
+    
+    <div class="post-preview">
+        <div class="post-time">2024-01-08</div>
+        <div class="post-info">
+            <a href="https://www.xinqubang.com/posts/4295.html">
+                <h3>
+                    巧妙修改Windows暂停更新时长，彻底告别更新困扰！
+                </h3>
+            </a>
+            <p>
+                
+                <span>/</span>
+                
+                <a class="tag" href="/tags/#系统更新" title="系统更新">系统更新</a>
+                <span>/</span>
+                
+                
+            </p>
+        </div>
+    </div>
+    
+    <div class="post-preview">
+        <div class="post-time">2024-01-08</div>
+        <div class="post-info">
+            <a href="https://www.xinqubang.com/posts/6570.html">
+                <h3>
+                    免费下载某度文库vip文档，没想到这个在线网站如此强大
+                </h3>
+            </a>
+            <p>
+                
+                <span>/</span>
+                
+                <a class="tag" href="/tags/#办公文档" title="办公文档">办公文档</a>
+                <span>/</span>
+                
+                
+            </p>
+        </div>
+    </div>
+    
+    <div class="post-preview">
+        <div class="post-time">2024-01-08</div>
+        <div class="post-info">
+            <a href="https://www.xinqubang.com/posts/46410.html">
+                <h3>
+                    找合同模板就来合同范本文本库，官方出品更可靠
+                </h3>
+            </a>
+            <p>
+                
+                <span>/</span>
+                
+                <a class="tag" href="/tags/#办公文档" title="办公文档">办公文档</a>
+                <span>/</span>
+                
+                
+            </p>
+        </div>
+    </div>
+    
+    <div class="post-preview">
+        <div class="post-time">2024-01-08</div>
+        <div class="post-info">
+            <a href="https://www.xinqubang.com/posts/23052.html">
+                <h3>
+                    海量无损音乐资源，尽在熊猫无损音乐
+                </h3>
+            </a>
+            <p>
+                
+                <span>/</span>
+                
+                <a class="tag" href="/tags/#音乐下载" title="音乐下载">音乐下载</a>
+                <span>/</span>
+                
+                
+            </p>
+        </div>
+    </div>
+    
+    <div class="post-preview">
+        <div class="post-time">2024-01-08</div>
+        <div class="post-info">
+            <a href="https://www.xinqubang.com/posts/5013.html">
+                <h3>
+                    SuperCopy超级复制：解除网页复制限制，轻松复制所需内容
+                </h3>
+            </a>
+            <p>
+                
+                <span>/</span>
+                
+                <a class="tag" href="/tags/#小工具" title="小工具">小工具</a>
+                <span>/</span>
+                
+                
+            </p>
+        </div>
+    </div>
+    
+</div>
+<ul class="pager">
+    
+    <li class="previous">
+        <a href="/">&larr; Newer Posts</a>
+    </li>
+    
+    
+    <li class="next">
+        <a href="/page/3/">Older Posts &rarr;</a>
+    </li>
+    
+</ul>
 
-首先就是大家都需要的免费听全网音乐功能，最近其余音乐APP都因不可抗力因素停止运营，而这款是目前仅存的还支持免费听免费下载全网音乐的神器，在软件内直接搜索你想听的音乐，马上就会快速为你找到，支持在软件里直接听，也支持下载到本地，四种音质供你选择。
-
-然后软件还支持影视搜索、资源嗅探，你在任何网页上浏览的媒体文件，它都支持提取，直接输入你想提取出shi频等媒体文件的网址，软件就会自动解析，提供在线观，也支持下载到本地，另外就是内置了多条官方解析，支持四大网站，具体就不多说了，大家可以自行尝试，可以做到完全免会员看所有平台。
-
-软件还支持很多其他实用的功能 ...</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/posts/22120.html')"><div class="post_cover left"><a href="/posts/22120.html" title="热播短剧免费看，随时随地享受追剧的快乐" style="display: flex;height: 100%;"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xinqubang.com/202312271901918.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="热播短剧免费看，随时随地享受追剧的快乐" style="pointer-events: none"></a></div><div class="recent-post-info"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><div class="article-categories-original">网站</div><a class="unvisited-post" href="/posts/22120.html" title="热播短剧免费看，随时随地享受追剧的快乐">未读</a></div><a class="article-title" href="/posts/22120.html" title="热播短剧免费看，随时随地享受追剧的快乐">热播短剧免费看，随时随地享受追剧的快乐</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2024-01-08T10:23:16.000Z" title="发表于 2024-01-08 18:23:16" time="2024-01-08 18:23:16">2024-01-08</time><time class="time_hidden" datetime="2024-01-08T10:49:55.050Z" title="更新于 2024-01-08 18:49:55" time="2024-01-08 18:49:55">2024-01-08</time></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E7%9F%AD%E5%89%A7/" event.cancelbubble onclick="window.event.cancelBubble=true;"><span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>短剧</span></a></span></div><div class="content">近年来，短剧在短视频平台上大受欢迎，那些逆袭、翻转、重生、穿越的剧情让人看得欲罢不能。然而，精彩的短剧常常需要付费观看，这让许多剧迷们感到无奈。
-今天，为大家推荐一个可以免费观看全网热门短剧的网站——榜一短剧。
-
-榜一短剧被誉为可以同步更新最新热门VIP资源的平台。官方推出新剧集后，5-30分钟内你就可以免费观看。无论是大片还是高清正版短剧，你都可以在榜一短剧上免费在线观看。不仅如此，国内外影片、电视剧、综艺、动漫等各种类型，榜一短剧都能满足你的需求。
-榜一短剧支持网页、iOS、安卓、iPad、Mac、Windows等多种设备，让你随时随地都能享受到追剧的快乐。而且，榜一短剧还支持投屏到电视观看，让你在家中也能拥有影院般的观影体验。
-
-💡 如果您还有其他想了解的软件，欢迎您在底部评论区留言，一起交流~。希望我今天的分享能对您有所帮助，谢谢！
-
-下载地址
-
-官网</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/posts/28937.html')"><div class="post_cover left"><a href="/posts/28937.html" title="快速使用全球主流AI绘画应用，不用购买设备或本地部署！" style="display: flex;height: 100%;"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xinqubang.com/202312260959256.webp?t=33ecce23-b782-456d-9d78-0961c9cb9e1b" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="快速使用全球主流AI绘画应用，不用购买设备或本地部署！" style="pointer-events: none"></a></div><div class="recent-post-info"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><div class="article-categories-original">网站</div><a class="unvisited-post" href="/posts/28937.html" title="快速使用全球主流AI绘画应用，不用购买设备或本地部署！">未读</a></div><a class="article-title" href="/posts/28937.html" title="快速使用全球主流AI绘画应用，不用购买设备或本地部署！">快速使用全球主流AI绘画应用，不用购买设备或本地部署！</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2024-01-08T10:23:07.000Z" title="发表于 2024-01-08 18:23:07" time="2024-01-08 18:23:07">2024-01-08</time><time class="time_hidden" datetime="2024-01-08T10:49:55.048Z" title="更新于 2024-01-08 18:49:55" time="2024-01-08 18:49:55">2024-01-08</time></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/ai%E7%BB%98%E7%94%BB/" event.cancelbubble onclick="window.event.cancelBubble=true;"><span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>ai绘画</span></a></span></div><div class="content">在AI绘画领域，许多人新手在配置工具和入门平台上感到困惑，难以找到合适的算力支持。但端脑云平台的出现，彻底改变了这个难题。端脑云是端脑科技开发的AIGC工具平台，汇集了主流AIGC应用，并通过分布式算力技术整合优化了计算资源，为大家提供了强大的算力支持。
-
-端脑云平台帮助我们快速入门使用AI绘画领域热门主流的AIGC应用，无需购买设备或本地部署应用，同时相比阿里云等中心化的云算力平台，端脑云的综合成本会降低90%以上。（方便使用！花费成本低！快速上手！适合所有AI绘画领域的学习者和使用者！）
-3080/10G显存/32G内存 低至0.015元/分钟，0.9元一小时
-4090/24G显存/128G内存 低至0.04元/分钟，2.36元一小时
+    </div>
+</div>
 
 
-目前端脑云平台支持的AI绘画工具如下所示，基本上包含了当今的最强AI绘画生产力工具：•Stable Diffusion WbUI：一键部署AI绘图环境全面支持huggingface和C站。•Stable Diffusion WbUI高级版：支持命令行，支持百度网盘上传文件。•ComfyUI：基于节点流程的Stable Diffusion，精准的工 ...</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/posts/33135.html')"><div class="post_cover left"><a href="/posts/33135.html" title="这个网站竟然可以在浏览器中免费实现批量文件重命名！" style="display: flex;height: 100%;"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xinqubang.com/202312251011043.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="这个网站竟然可以在浏览器中免费实现批量文件重命名！" style="pointer-events: none"></a></div><div class="recent-post-info"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><div class="article-categories-original">网站</div><a class="unvisited-post" href="/posts/33135.html" title="这个网站竟然可以在浏览器中免费实现批量文件重命名！">未读</a></div><a class="article-title" href="/posts/33135.html" title="这个网站竟然可以在浏览器中免费实现批量文件重命名！">这个网站竟然可以在浏览器中免费实现批量文件重命名！</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2024-01-08T10:22:54.000Z" title="发表于 2024-01-08 18:22:54" time="2024-01-08 18:22:54">2024-01-08</time><time class="time_hidden" datetime="2024-01-08T10:49:55.051Z" title="更新于 2024-01-08 18:49:55" time="2024-01-08 18:49:55">2024-01-08</time></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/" event.cancelbubble onclick="window.event.cancelBubble=true;"><span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>在线工具</span></a></span></div><div class="content">批量重命名文件，这个低频但不得不做的操作，相信大家都经历过。为了偶尔的需要，专门下载一个软件，总是有点大费周章。而今天要分享给大家的是一款无需下载，就能在浏览器里批量重命名的神器——“批量文件重命名”。这款神奇的开源工具，利用浏览器的新技术，实现了在浏览器里批量重命名文件的功能。从此以后，再也不用为这样的低频操作下载什么软件了，即开即用，支持正则表达式。打开浏览器，就能使用这款在线版本的批量文件重命名工具。它内置了常用的替换方式，批量重命名时，右下方也有预览区域，非常直观。网站支持多种文件格式的文件，常见的文档和图片格式应该都是可以用的。
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
 
+        
 
-在隐私保护方面，根据开发者的说明，这款工具运用了浏览器载入文件的关联 API，仅获取文件名称，而不读取文件内容，同时不上传到服务器。总之，”批量文件重命名”是一款非常好用的工具，它在浏览器中实现了文件批量重命名的功能，无需下载软件，即开即用，内置常用替换方式，支持多种文件格式，安全可靠，开源免费。
-💡 如果您还有其他想了解的软件，欢迎您在底部评论区留言，一起交流~。希望我今天的分享能对您有所帮助，谢谢！
+        
 
-下载地址
+        
 
-官网</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/posts/48522.html')"><div class="post_cover left"><a href="/posts/48522.html" title="幻影下载|全新磁力神器，完全免费！下载不限速，吊打迅雷！" style="display: flex;height: 100%;"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xinqubang.com/202401031302478.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="幻影下载|全新磁力神器，完全免费！下载不限速，吊打迅雷！" style="pointer-events: none"></a></div><div class="recent-post-info"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><div class="article-categories-original">安卓</div><a class="unvisited-post" href="/posts/48522.html" title="幻影下载|全新磁力神器，完全免费！下载不限速，吊打迅雷！">未读</a></div><a class="article-title" href="/posts/48522.html" title="幻影下载|全新磁力神器，完全免费！下载不限速，吊打迅雷！">幻影下载|全新磁力神器，完全免费！下载不限速，吊打迅雷！</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2024-01-08T10:22:44.000Z" title="发表于 2024-01-08 18:22:44" time="2024-01-08 18:22:44">2024-01-08</time><time class="time_hidden" datetime="2024-01-08T10:49:55.046Z" title="更新于 2024-01-08 18:49:55" time="2024-01-08 18:49:55">2024-01-08</time></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/" event.cancelbubble onclick="window.event.cancelBubble=true;"><span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>下载工具</span></a></span></div><div class="content">这段时间，磁力下载软件层出不穷，但大部分都需要付费。而今天，我要给大家带来一款非常强大的磁力下载软件——幻影下载。经过实际测试，这款软件的下载速度非常快，完全无需担心付费问题。
-幻影下载，界面简洁，目前免注册免广告使用，内置搜索网站和资源网站，点击需要观看的资源页面的磁力链就可以自动唤醒下载功能。事实上，幻影下载就相当于迅雷，但它现在完全免费，下载不限速，这足以吊打迅雷！
+        
 
-幻影下载支持多种链接方式，包括magnet、http、https、ftp、ed2k、thunder等。最值得一提的是，它支持边下边播功能，全屏无黑边播放视频，无需等待资源下载完成即可点击播放，也可以提前选择预览播放，喜欢的资源再进行创建下载任务。这种边下边播功能，让你无需等待，直接观看心仪的资源。
-
-总的来说，幻影下载是一款非常强大的磁力下载软件，它免费、不限速、支持边下边播，完全可以吊打迅雷。你只需要下载幻影下载，就能享受到完全免费的极速下载体验，享受边下边播的乐趣。你还在等什么？现在就下载幻影下载，开启你的极速下载之旅吧！
-💡 如果您还有其他想了解的软件，欢迎您在底部评论区留言，一起交流~。希望我今天的分享能 ...</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/posts/4295.html')"><div class="post_cover left"><a href="/posts/4295.html" title="巧妙修改Windows暂停更新时长，彻底告别更新困扰！" style="display: flex;height: 100%;"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xinqubang.com/202312231842476.webp?t=46401cbd-0400-4946-aad9-d61b9e6648f9" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="巧妙修改Windows暂停更新时长，彻底告别更新困扰！" style="pointer-events: none"></a></div><div class="recent-post-info"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><div class="article-categories-original">电脑</div><a class="unvisited-post" href="/posts/4295.html" title="巧妙修改Windows暂停更新时长，彻底告别更新困扰！">未读</a></div><a class="article-title" href="/posts/4295.html" title="巧妙修改Windows暂停更新时长，彻底告别更新困扰！">巧妙修改Windows暂停更新时长，彻底告别更新困扰！</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2024-01-08T08:22:20.000Z" title="发表于 2024-01-08 16:22:20" time="2024-01-08 16:22:20">2024-01-08</time><time class="time_hidden" datetime="2024-01-08T09:11:59.298Z" title="更新于 2024-01-08 17:11:59" time="2024-01-08 17:11:59">2024-01-08</time></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0/" event.cancelbubble onclick="window.event.cancelBubble=true;"><span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>系统更新</span></a></span></div><div class="content">Windows的自动更新功能让许多人苦不堪言，不仅占用大量时间，还经常导致软件与驱动程序出现问题。然而，尽管Windows内设有手动暂停更新功能，最长也只能暂停几周。幸运的是，这里有一款名为“修改Windows更新最大时长”的简洁小软件，让你可以一键设定更新的暂停时长。
-这个小软件仅有10K大小，易于使用。只需打开软件，在空白处填写你期望的暂停天数（单位为天），然后点击确认即可。我尝试过填写365，这意味着暂停更新365天。完成修改后，你可以在设置中查看“Windows更新”-高级选项，你就会看到最大的数字已经由35天改为你所填写的天数。
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>  Theme <a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
 
 
 
-值得注意的是，虽然暂停更新可以为你节省时间，避免系统更新带来的各种困扰，但同时也可能让你错过一些重要的系统问题修补。因此，我建议你暂停更新一年半载左右，保持系统的稳定和安全。赶快尝试这款实用小软件，让你的Windows更新更加符合你的需求吧！
-💡 如果您还有其他想了解的软件，欢迎您在底部评论区留言，一起交流~。希望我今天的分享能对您有所帮助，谢谢！
 
-下载地址
+</body>
 
-蓝奏云
-123网盘</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/posts/6570.html')"><div class="post_cover left"><a href="/posts/6570.html" title="免费下载某度文库vip文档，没想到这个在线网站如此强大" style="display: flex;height: 100%;"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xinqubang.com/202312171842240.webp?t=e3f92b5a-7973-4d5f-aafa-13a1a2eef23b" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="免费下载某度文库vip文档，没想到这个在线网站如此强大" style="pointer-events: none"></a></div><div class="recent-post-info"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><div class="article-categories-original">网站</div><a class="unvisited-post" href="/posts/6570.html" title="免费下载某度文库vip文档，没想到这个在线网站如此强大">未读</a></div><a class="article-title" href="/posts/6570.html" title="免费下载某度文库vip文档，没想到这个在线网站如此强大">免费下载某度文库vip文档，没想到这个在线网站如此强大</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2024-01-08T08:16:11.000Z" title="发表于 2024-01-08 16:16:11" time="2024-01-08 16:16:11">2024-01-08</time><time class="time_hidden" datetime="2024-01-10T05:56:52.775Z" title="更新于 2024-01-10 13:56:52" time="2024-01-10 13:56:52">2024-01-10</time></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E5%8A%9E%E5%85%AC%E6%96%87%E6%A1%A3/" event.cancelbubble onclick="window.event.cancelBubble=true;"><span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>办公文档</span></a></span></div><div class="content">最近，我在网上发现了一个非常实用的在线网站，无需下载任何软件，直接就可以在网页上下载某度文库的文档，甚至连那些需要VIP权限才能下载的文档也能轻松下载！这个工具的出现，为广大用户提供了极大的便利，无论是学生还是职场人士，都能从中受益。
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.xml"
+    window.hexo_root = "/"
+    window.isPost = false
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 
-使用方法方法一：解析链接下载直接将某度文库的链接放进去解析下载，这种方法更为常用。通常先阅读文档内容，觉得合适再决定是否下载。方法二：站内搜索关键词如果你想找更具针对性的文档，不妨通过关键词直接在站内搜索。找到相关文档后，点击后面的下载即可获取。
+<script src="/js/index.js"></script>
 
-不过每天有下载次数限制，每天仅可下载2次，且站长设置了验证码要求。
-对于大部分人来说，两次下载已经足够。当然，你也可以将链接提取出来后，通过预览再利用浏览器的批量图片下载插件将所有图片下载，最后用图片转PDF功能将这些图片合成PDF文件。这样操作后，下载的文件不再有水印，非常方便。总之，通过这些简单实用的方法，你就能轻松下载某度文库的文档了，快去试试吧！
-💡 如果您还有其他想了解的软件，欢迎您在底部评论区留言，一起交流~。希望我今天的分享能对您有所帮助，谢谢！
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-下载地址
 
-官网</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/posts/46410.html')"><div class="post_cover left"><a href="/posts/46410.html" title="找合同模板就来合同范本文本库，官方出品更可靠" style="display: flex;height: 100%;"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xinqubang.com/202312120949405.webp?t=bda23f44-c529-4375-99f1-d28822265034" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="找合同模板就来合同范本文本库，官方出品更可靠" style="pointer-events: none"></a></div><div class="recent-post-info"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><div class="article-categories-original">网站</div><a class="unvisited-post" href="/posts/46410.html" title="找合同模板就来合同范本文本库，官方出品更可靠">未读</a></div><a class="article-title" href="/posts/46410.html" title="找合同模板就来合同范本文本库，官方出品更可靠">找合同模板就来合同范本文本库，官方出品更可靠</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2024-01-08T08:05:58.000Z" title="发表于 2024-01-08 16:05:58" time="2024-01-08 16:05:58">2024-01-08</time><time class="time_hidden" datetime="2024-01-08T09:11:59.293Z" title="更新于 2024-01-08 17:11:59" time="2024-01-08 17:11:59">2024-01-08</time></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E5%8A%9E%E5%85%AC%E6%96%87%E6%A1%A3/" event.cancelbubble onclick="window.event.cancelBubble=true;"><span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>办公文档</span></a></span></div><div class="content">在日常生活中，签订合同的重要性不言而喻。无论是租房、买车还是进行各类交易，一份清晰的合同都可以有效地保障双方的权益。然而，对于大多数人来说，起草合同并不容易，许多人甚至不知道从哪里开始。别担心，今天为大家推荐一个实用的网站——合同范本文本库。
 
-合同范本文本库是一个免费的资源库，收集了国家市场监督管理总局制定的合同示范文本，涵盖了房屋租赁合同、二手车买卖合同等多种类型。在该网站上，你可以通过关键词搜索合同模板（建议使用简短的关键词，以获得更多匹配结果），也可以按地区和分类进行查找。下载也是提供了pdf和Word文档两种格式方便后期修改调整。
 
-无论你需要哪种类型的合同模板，都可以在合同范本文本库中找到相应的规范格式。这不仅有利于提高合同的准确性和规范性，还可以大大提高我们的效率。所以，赶紧把这个实用网站分享给身边的朋友吧，让大家一起受益。
-💡 如果您还有其他想了解的软件，欢迎您在底部评论区留言，一起交流~。希望我今天的分享能对您有所帮助，谢谢！
 
-下载地址
 
-官网
-</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/posts/23052.html')"><div class="post_cover left"><a href="/posts/23052.html" title="海量无损音乐资源，尽在熊猫无损音乐" style="display: flex;height: 100%;"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xinqubang.com/202312090933522.webp?t=1c2e49be-6daa-4563-95e4-932732e69d3c" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="海量无损音乐资源，尽在熊猫无损音乐" style="pointer-events: none"></a></div><div class="recent-post-info"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><div class="article-categories-original">网站</div><a class="unvisited-post" href="/posts/23052.html" title="海量无损音乐资源，尽在熊猫无损音乐">未读</a></div><a class="article-title" href="/posts/23052.html" title="海量无损音乐资源，尽在熊猫无损音乐">海量无损音乐资源，尽在熊猫无损音乐</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2024-01-08T08:00:59.000Z" title="发表于 2024-01-08 16:00:59" time="2024-01-08 16:00:59">2024-01-08</time><time class="time_hidden" datetime="2024-01-08T09:11:59.300Z" title="更新于 2024-01-08 17:11:59" time="2024-01-08 17:11:59">2024-01-08</time></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E9%9F%B3%E4%B9%90%E4%B8%8B%E8%BD%BD/" event.cancelbubble onclick="window.event.cancelBubble=true;"><span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>音乐下载</span></a></span></div><div class="content">Hi，今天我要为大家推荐一个非常强大的免费无损音乐分享网站——熊猫无损音乐。在这个网站上，你可以找到各种各样的WAV、Flac和MP3格式的无损音乐，而且它不仅免费，还支持高保真无损下载和WAV无损格式下载。
-FLAC作为一种著名的自由音频压缩编码，具有无损压缩的特点。虽然它的体积略大，但音质却超好，可以还原音乐光盘音质。相比之下，mp3的音质就显得逊色多了。而想要在网易云音乐上享受到无损品质的flac音乐文件，你甚至需要成为黑胶SVIP会员。
-
-熊猫无损音乐为广大无损音乐爱好者提供了一个交流和资源分享的平台，让你可以在这里找到许多新歌，并且免费下载。虽然它目前不提供试听功能，但丰富的分类和海量的资源足以弥补这一缺憾。
-
-在现如今这个音乐版权意识日益增强的时代，能够提供无损音质的音乐网站已经少之又少，更何况是免费的。因此，熊猫无损音乐可谓是音乐爱好者们的一大福音。希望大家尽快收藏，并下载自己喜欢的歌曲。
-总的来说，熊猫无损音乐是一个非常实用且强大的免费音乐资源网站，非常适合喜欢高品质音乐的你。赶快去试试吧！
-💡 如果您还有其他想了解的软件，欢迎您在底部评论区留言，一起交流~。希望我今 ...</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/posts/5013.html')"><div class="post_cover left"><a href="/posts/5013.html" title="SuperCopy超级复制：解除网页复制限制，轻松复制所需内容" style="display: flex;height: 100%;"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F0477948f-78a0-42a3-8b0b-e0aad1e0e3e6%2Fb9ea47e5-570f-4600-869f-d6566dc60262%2Fbb1cf9f4c09e522ebee1b3ea887485c40292238b.jpg?table=block&amp;id=76ce4dcb-2956-44fc-a951-afa07b0b298a&amp;t=76ce4dcb-2956-44fc-a951-afa07b0b298a&amp;width=800" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SuperCopy超级复制：解除网页复制限制，轻松复制所需内容" style="pointer-events: none"></a></div><div class="recent-post-info"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><div class="article-categories-original">扩展插件</div><a class="unvisited-post" href="/posts/5013.html" title="SuperCopy超级复制：解除网页复制限制，轻松复制所需内容">未读</a></div><a class="article-title" href="/posts/5013.html" title="SuperCopy超级复制：解除网页复制限制，轻松复制所需内容">SuperCopy超级复制：解除网页复制限制，轻松复制所需内容</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2024-01-08T07:47:18.000Z" title="发表于 2024-01-08 15:47:18" time="2024-01-08 15:47:18">2024-01-08</time><time class="time_hidden" datetime="2024-01-08T09:11:59.277Z" title="更新于 2024-01-08 17:11:59" time="2024-01-08 17:11:59">2024-01-08</time></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E5%B0%8F%E5%B7%A5%E5%85%B7/" event.cancelbubble onclick="window.event.cancelBubble=true;"><span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>小工具</span></a></span></div><div class="content">最近，你是否也遇到过在浏览网页时无法复制或右键的尴尬情况？有时候我们需要复制一些重要的信息，却被网页的复制限制所束缚。不过，现在有了SuperCopy超级复制，这一切都将成为过去式。
-
-SuperCopy超级复制是一款唯一官方扩展，它能够解除禁止复制、解除禁止右键、解除禁止全选和解除禁止粘贴的限制。无论是在百度文库、腾讯文档、金山文档、起点文学还是豆瓣读书等常用网站，SuperCopy都能轻松应对。它的操作简单，只需点击图标即可解除限制，而且具有记忆功能，让你在需要复制的网站上更加便捷。
-
-SuperCopy超级复制适用于Chrome浏览器和Edge浏览器，使用方法也非常简单。在访问被禁止右键或禁止复制的网站上，点击SuperCopy图标即可解除限制。当图标灰色时表示未启用解除功能，而当图标彩色时表示解除功能已生效。
-
-这款插件还提供了一系列常用中文网站的复制支持，包括百度文库、起点中文网、创始中文网、磨铁中文网、锦文小说网、逸云书院、纵横中文网、网易云阅读、腾讯原创馆、豆瓣阅读等等。无论你需要复制的内容来自哪个网站，SuperCopy都能够轻松应对。
-如果你也曾为网页复制限制而苦恼， ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="anzhiyufont anzhiyu-icon-chevron-left fa-fw" style="font-weight: inherit; font-size: 1rem;"></i><div class="pagination_tips_prev">上页</div></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/#content-inner">3</a><a class="extend next" rel="next" href="/page/3/#content-inner"><div class="pagination_tips_next">下页</div><i style="font-weight: inherit; font-size: 1rem;" class="anzhiyufont anzhiyu-icon-chevron-right fa-fw"></i></a><div class="toPageGroup"><input id="toPageText" oninput="value=value.replace(/[^0-9]/g,'')" maxlength="3" onkeyup="this.value=this.value.replace(/[^u4e00-u9fa5w]/g,'')" aria-label="toPage"><a id="toPageButton" onclick="anzhiyu.toPage()"><i class="anzhiyufont anzhiyu-icon-angles-right" style="font-weight: inherit; font-size: 1rem;"></i></a></div></div></nav></div></div></main><footer id="footer"><div id="footer-wrap"></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2024 By <a class="footer-bar-link" href="/" title="新趣帮" target="_blank">新趣帮</a></div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://www.kxziti.cn/" title="快下字体">快下字体</a><a class="footer-bar-link" target="_blank" rel="noopener" href="https://beian.miit.gov.cn/" title="蜀ICP备2023034378号-1">蜀ICP备2023034378号-1</a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">30</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">28</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">6</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.xinqubang.com/" title="NotionNext"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/favicon.png" alt="NotionNext"/><span class="back-menu-item-text">NotionNext</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://www.kxziti.cn/" title="快下字体"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="快下字体"/><span class="back-menu-item-text">快下字体</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 分类</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/categories/%E7%94%B5%E8%84%91/"><i class="fa-brands fa-windows faa-tada"></i><span> 电脑</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/%E5%AE%89%E5%8D%93/"><i class="fa-brands fa-android faa-tada"></i><span> 安卓</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/%E5%AE%89%E5%8D%93/"><i class="fa-brands fa-apple faa-tada"></i><span> IOS</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/%E7%BD%91%E7%AB%99/"><i class="fa-solid fa-table faa-tada"></i><span> 网站</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/%E6%89%A9%E5%B1%95%E6%8F%92%E4%BB%B6/"><i class="fa-brands fa-chrome faa-tada"></i><span> 扩展插件</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/equipment/"><span> 神器集</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/comments/"><span> 留言板</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/music/"><span> 音乐馆</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 其它</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="fas fa-link faa-tada"></i><span> 友链</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/aboutus/"><i class="fas fa-info faa-tada"></i><span> 关于</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/PDF%E5%B7%A5%E5%85%B7/" style="font-size: 0.88rem;">PDF工具<sup>1</sup></a><a href="/tags/ai%E7%BB%98%E7%94%BB/" style="font-size: 0.88rem;">ai绘画<sup>2</sup></a><a href="/tags/ocr%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB/" style="font-size: 0.88rem;">ocr文字识别<sup>1</sup></a><a href="/tags/%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/" style="font-size: 0.88rem;">下载工具<sup>3</sup></a><a href="/tags/%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD/" style="font-size: 0.88rem;">不限速下载<sup>1</sup></a><a href="/tags/%E4%B9%A0%E9%A2%98%E7%94%9F%E6%88%90/" style="font-size: 0.88rem;">习题生成<sup>1</sup></a><a href="/tags/%E5%8A%9E%E5%85%AC%E6%96%87%E6%A1%A3/" style="font-size: 0.88rem;">办公文档<sup>2</sup></a><a href="/tags/%E5%8D%B8%E8%BD%BD/" style="font-size: 0.88rem;">卸载<sup>1</sup></a><a href="/tags/%E5%9B%BE%E7%89%87%E4%B8%8B%E8%BD%BD/" style="font-size: 0.88rem;">图片下载<sup>1</sup></a><a href="/tags/%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/" style="font-size: 0.88rem;">图片处理<sup>2</sup></a><a href="/tags/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/" style="font-size: 0.88rem;">在线工具<sup>2</sup></a><a href="/tags/%E5%B0%8F%E5%B7%A5%E5%85%B7/" style="font-size: 0.88rem;">小工具<sup>3</sup></a><a href="/tags/%E5%B7%A5%E5%85%B7%E7%AE%B1/" style="font-size: 0.88rem;">工具箱<sup>1</sup></a><a href="/tags/%E6%88%AA%E5%9B%BE/" style="font-size: 0.88rem;">截图<sup>1</sup></a><a href="/tags/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/" style="font-size: 0.88rem;">文件传输<sup>1</sup></a><a href="/tags/%E6%96%87%E4%BB%B6%E6%89%AB%E6%8F%8F/" style="font-size: 0.88rem;">文件扫描<sup>1</sup></a><a href="/tags/%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB/" style="font-size: 0.88rem;">文字识别<sup>2</sup></a><a href="/tags/%E6%97%A0%E6%8D%9F%E6%94%BE%E5%A4%A7/" style="font-size: 0.88rem;">无损放大<sup>1</sup></a><a href="/tags/%E7%9F%AD%E5%89%A7/" style="font-size: 0.88rem;">短剧<sup>2</sup></a><a href="/tags/%E7%9F%AD%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90/" style="font-size: 0.88rem;">短视频解析<sup>2</sup></a><a href="/tags/%E7%A3%81%E5%8A%9B%E4%B8%8B%E8%BD%BD/" style="font-size: 0.88rem;">磁力下载<sup>1</sup></a><a href="/tags/%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0/" style="font-size: 0.88rem;">系统更新<sup>1</sup></a><a href="/tags/%E7%B3%BB%E7%BB%9F%E6%BF%80%E6%B4%BB/" style="font-size: 0.88rem;">系统激活<sup>1</sup></a><a href="/tags/%E7%BD%91%E7%9B%98%E4%B8%8B%E8%BD%BD/" style="font-size: 0.88rem;">网盘下载<sup>1</sup></a><a href="/tags/%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD/" style="font-size: 0.88rem;">视频下载<sup>1</sup></a><a href="/tags/%E8%AE%B0%E5%8D%95%E8%AF%8D/" style="font-size: 0.88rem;">记单词<sup>1</sup></a><a href="/tags/%E8%BF%BD%E5%89%A7/" style="font-size: 0.88rem;">追剧<sup>2</sup></a><a href="/tags/%E9%9F%B3%E4%B9%90%E4%B8%8B%E8%BD%BD/" style="font-size: 0.88rem;">音乐下载<sup>3</sup></a></div></div><hr/></div></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="8152976493" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random" volume="0.5"></meting-js></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="anzhiyufont anzhiyu-icon-xmark"></i></button></nav><div class="is-center" id="loading-database"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-pulse-icon"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.5/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script async src="/anzhiyu/random.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><input type="hidden" name="page-type" id="page-type" value="anzhiyu"></div><script>var visitorMail = "visitor@xinqubang.com";
-</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><script src="/js/anzhiyu/right_click_menu.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><script async src="//at.alicdn.com/t/c/font_4376321_2mv7xhnpr88.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","meta[property=\"og:type\"]","meta[property=\"og:site_name\"]","meta[property=\"og:description\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
-var pjax = new Pjax({
-  elements: 'a:not([target="_blank"])',
-  selectors: pjaxSelectors,
-  cacheBust: false,
-  analytics: false,
-  scrollRestoration: false
-})
-
-document.addEventListener('pjax:send', function () {
-  // removeEventListener scroll 
-  anzhiyu.removeGlobalFnEvent('pjax')
-  anzhiyu.removeGlobalFnEvent('themeChange')
-
-  document.getElementById('rightside').classList.remove('rightside-show')
-  
-  if (window.aplayers) {
-    for (let i = 0; i < window.aplayers.length; i++) {
-      if (!window.aplayers[i].options.fixed) {
-        window.aplayers[i].destroy()
-      }
-    }
-  }
-
-  typeof typed === 'object' && typed.destroy()
-
-  //reset readmode
-  const $bodyClassList = document.body.classList
-  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
-})
-
-document.addEventListener('pjax:complete', function () {
-  window.refreshFn()
-
-  document.querySelectorAll('script[data-pjax]').forEach(item => {
-    const newScript = document.createElement('script')
-    const content = item.text || item.textContent || item.innerHTML || ""
-    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
-    newScript.appendChild(document.createTextNode(content))
-    item.parentNode.replaceChild(newScript, item)
-  })
-
-  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
-
-  typeof panguInit === 'function' && panguInit()
-
-  // google analytics
-  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
-
-  // baidu analytics
-  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
-
-  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
-
-  // prismjs
-  typeof Prism === 'object' && Prism.highlightAll()
-})
-
-document.addEventListener('pjax:error', e => {
-  if (e.request.status === 404) {
-    pjax.loadUrl('/404.html')
-  }
-})</script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div><!-- hexo injector body_end start --><script async src="https://at.alicdn.com/t/c/font_4376321_2mv7xhnpr88.js"></script><!-- hexo injector body_end end --></body></html>
+</html>
